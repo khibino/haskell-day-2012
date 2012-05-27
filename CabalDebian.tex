@@ -7,7 +7,8 @@
 \usefonttheme{professionalfonts}
 \usepackage{packages}
 
-\title{Cabalチュートリアル}
+\title{Cabalの話}
+\subtitle{-- Cabalの依存関係解決 --}
 %% \subtitle{ -- Debian のすすめ -- }
 \author{日比野 啓}
 \date{ \today }
@@ -81,11 +82,11 @@ Hackage - Haskell のパッケージ
 % cabal install PACKAGE_NAME
 \end{lstlisting}
 
-またはソースを展開した場所で
+%% またはソースを展開した場所で
 
-\begin{lstlisting}
-% cabal install
-\end{lstlisting}
+%% \begin{lstlisting}
+%% % cabal install
+%% \end{lstlisting}
 
 \begin{itemize}
 \item 必要となるパッケージが\\全てインストールされる
@@ -102,7 +103,7 @@ Hackage - Haskell のパッケージ
 \item ${\bf B}$
 \item
   \begin{description}
-  \item $C >= 1$
+  \item $C >= 1$ \\{\small … バージョンの制約付き依存関係}
   \item $D >= 1$
   \end{description}
 \end{description}
@@ -240,7 +241,7 @@ Hackage - Haskell のパッケージ
 \item ${\bf B}$
 \item
   \begin{description}
-  \item $C >= 1 \wedge C < 2$
+  \item $C >= 1 \wedge {\color{red} C < 2}$
   \item $D >= 1$
   \end{description}
 \end{description}

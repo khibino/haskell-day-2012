@@ -29,6 +29,8 @@ images = \
 
 all:: $(images) CabalDebian.dvi CabalDebian.pdf
 
+CabalDebian.dvi: $(images)
+
 clean::
 	$(RM) *.o *.hi
 	$(RM) *.dvi *.log *.aux *.toc
