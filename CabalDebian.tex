@@ -191,7 +191,7 @@ Hackage \\- Haskell のパッケージを蓄積しているサイト
 \frametitle{Cabalの問題点 - 依存解決 - 5}
 
 \begin{itemize}
-\item 必要な試行回数が多くなりすぎる
+\item 必要なバックトラックの回数が多くなりすぎる
   \begin{itemize}
   \item 依存関係の段数
   \item パッケージのバージョンの数
@@ -205,7 +205,7 @@ Hackage \\- Haskell のパッケージを蓄積しているサイト
 \frametitle{Cabal - 依存解決 - 物量で解決}
 
 \begin{itemize}
-\item cabal の試行回数? を明示的に指定
+\item cabal のバックトラック回数を明示的に指定
 \item デフォルトは 200
 \end{itemize}
 
@@ -295,7 +295,7 @@ cabal に同時に与えれば、\\両方を満たすように依存関係を解
 
 \begin{itemize}
 \item Debian のパッケージシステムが\\依存関係を壊さないように保ってくれる
-\item 517個の hackage (2012-05-27現在) が\\ Debian package 化されている
+\item 475個の hackage (2012-05-27現在) のライブラリが\\ Debian package 化されている
   \begin{itemize}
   \item yesod や snap もあるよ
   \end{itemize}
@@ -322,7 +322,7 @@ cabal に同時に与えれば、\\両方を満たすように依存関係を解
 
 \begin{itemize}
 \item cabal は便利
-\item でも複雑な依存関係を壊さないようにするのは大変
+\item でも複雑な依存関係を\\壊さないようにするのは大変
 \item Debian sid おすすめです
 \end{itemize}
 
